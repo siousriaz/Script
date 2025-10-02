@@ -1,5 +1,5 @@
 getgenv().Config = {
-    ["Key"] = "kqSwYbBsEWIEFZrHchziQagjlXgHWEWh",
+    ["Key"] = "mhnPWUJDlwYYGBnPQwqhlsNRbYpVpTif",
     ["Redeem Code"] = true,
     ["Skip Tutorial"] = true, -- After Rejoin You Must Need Waiting For Valid You (5mins-10mins)
     ["Webhook"] = {
