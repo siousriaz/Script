@@ -1,23 +1,23 @@
 getgenv().Config = {
     ["Key"] = "mhnPWUJDlwYYGBnPQwqhlsNRbYpVpTif",
     ["Redeem Code"] = true,
-    ["Skip Tutorial"] = true, -- After Rejoin You Must Need Waiting For Valid You (5mins-10mins)
+    ["Skip Tutorial"] = true, 
     ["Webhook"] = {
         ["Enable"] = true,
         ["Url"] = "https://discord.com/api/webhooks/1264481434572292199/rLmVsqMf7_cPTQZ6yahRtw9XIPmxfK94Y-_xdZPOtXWEbGG7amdt3lYHkl6eUKVMpMny",
-        ["Mentions ID"] = "UrDisordID", -- Discord ID
+        ["Mentions ID"] = "UrDiscordID", 
         ["Ping Mentions when"] = {
             ["Rarity"] = {
                 ["Rare"] = false,
                 ["Epic"] = false,
                 ["Legendary"] = false,
-                ["Mythic"] = true,
-                ["Godly"] = true,
+                ["Mythic"] = false,
+                ["Godly"] = false,
                 ["Limited"] = true,
                 ["Secret"] = true
             },
             ["Mutation"] = {
-                ["Normal"] = false,
+                ["Normal"] = true,
                 ["Diamond"] = true,
                 ["Neon"] = true,
                 ["Gold"] = true,
@@ -29,8 +29,8 @@ getgenv().Config = {
     },
     ["Performance"] = {
         ["Auto Rejoin"] = {
-            ["Enable"] = true, -- Reduced Bug/Error IDK [ Recommended ]
-            ["Delays"] = 2, -- [ Hours ] 0.5 = 30mins
+            ["Enable"] = false, 
+            ["Delays"] = 1, 
         },
         ["FPS Boost"] = true,
         ["UI"] = true,
@@ -39,48 +39,51 @@ getgenv().Config = {
         ["Auto Equiped Best Brainrot"] = {
             ["Enable"] = true,
             ["Auto Buy More Slot Brainrot Zone"] = true,
-            ["Delays"] = 60, -- [ Seconds ]
-        }, -- Auto Equiped In Brainrot Zone
+            ["Delays"] = 60, 
+        },
         ["Auto Collect Money"] = {
-            ["Enable"] = true, -- Auto Claim Money From Brainrot
-            ["Delays"] = 5 -- -- [ Seconds ]
+            ["Enable"] = false,
+            ["Delays"] = 5
+        },
+        ["Auto Plant"] = { -- ĐỔI từ Auto Plant Seeds sang Auto Plant
+            ["Enable"] = true,
+            ["Auto Plant Best Seed"] = {
+                ["Enable"] = true,
+                ["Only Plant When Event"] = false,
+                ["New Seed Plant"] = 1,
+                ["Auto Use Water Bucket"] = true,
+                ["Limit Countdowns Seeds"] = {
+                    ["Enable"] = true,
+                    ["Limit"] = 2
+                },
+                ["Delays"] = 180, 
+            },
         },
         ["Auto Unlock Rows"] = {
             ["Enable"] = true,
-            ["Max Unlock"] = 7 -- 7 Rows, Priority Lowest Price To Unlock
+            ["Max Unlock"] = 7
         },
         ["Auto Rebirth"] = {
             ["Enable"] = true,
-            ["Max Rebirth Reach"] = 2 -- You may select the rebirth of your choice [ Max 2 ]
-        },
-        ["Auto Plant"] = {
-            ["Enable"] = true, -- Enable Plant
-            ["Auto Plant Best Seed"] = {
-                ["Enable"] = true,
-                ["Only Plant When Event"] = false, -- Only Plant Seed When Event,
-                ["New Seed Plant"] = 1, -- Plant New Seed [ Priority High Rarity ]
-                ["Auto Use Water Bucket"] = true, -- Only Work In Private Server
-                ["Limit Countdowns Seeds"] = {
-                    ["Enable"] = true, -- Stop Plant New Seed When Many Countdowns Seeds [ Only Work In Private Server ]
-                    ["Limit"] = 2
-                },
-                ["Delays"] = 60, -- [ Seconds ]
-            },-- Clear all plants and replant the best seeds/plants
+            ["Max Rebirth Reach"] = 4
         },
         ["Auto Sell"] = {
-            ["Sell If Max"] = true, -- Only Sell After Full Inventory
+            ["Sell If Max"] = true,
             ["Brainrot"] = {
                 ["Enable"] = true,
-                ["Dont Sell Weight Above"] = 99.9, -- KG
+                ["Dont Sell Weight Above"] = 99.9,
                 ["Ignore Sell"] = {
-                    ["Brr Brr Patapim"] = true,
-                    ["Svinino Bombondino"] = true,
+                    ["Tralalero Tralala"] = true, -- Rebirth 1
+                    ["Bombini Gussini"] = true, -- Rebirth 1
+                    ["Vacca Saturno Saturnita"] = true, -- Rebirth 2,3,4
+                    ["Los Tralaleritos"] = true, -- Rebirth 2,3,4
+                    ["Dragon Cannelloni"] = true -- Limited
                 },
                 ["Select Brainrot Rarity"] = {
                     ["Rare"] = true,
                     ["Epic"] = true,
                     ["Legendary"] = true,
-                    ["Mythic"] = false,
+                    ["Mythic"] = true,
                     ["Godly"] = false,
                     ["Limited"] = false,
                     ["Serect"] = false
@@ -97,7 +100,7 @@ getgenv().Config = {
             },
             ["Plants"] = {
                 ["Enable"] = true,
-                ["Dont Sell Weight Above"] = 99.9, -- KG
+                ["Dont Sell Weight Above"] = 99.9,
                 ["Ignore Sell"] = {
                     ["Tomatrio"] = true,
                     ["Shroombino"] = true,
@@ -105,13 +108,13 @@ getgenv().Config = {
                 ["Select Plants Rarity"] = {
                     ["Rare"] = true,
                     ["Epic"] = true,
-                    ["Legendary"] = false,
+                    ["Legendary"] = true,
                     ["Mythic"] = false,
                     ["Godly"] = false,
                     ["Limited"] = false,
                     ["Serect"] = false
                 },
-                 ["Select Plants Mutation"] = {
+                ["Select Plants Mutation"] = {
                     ["Normal"] = true,
                     ["Diamond"] = false,
                     ["Neon"] = false,
@@ -136,12 +139,12 @@ getgenv().Config = {
     ["Auto Buy Seeds"] = {
         ["Enable"] = true,
         ["Select Seeds"] = {
-            ["Cactus Seed"] = true,
-            ["Strawberry Seed"] = true,
-            ["Pumpkin Seed"] = true,
-            ["Sunflower Seed"] = true,
-            ["Dragon Fruit Seed"] = true,
-            ["Eggplant Seed"] = true,
+            ["Cactus Seed"] = false,
+            ["Strawberry Seed"] = false,
+            ["Pumpkin Seed"] = false,
+            ["Sunflower Seed"] = false,
+            ["Dragon Fruit Seed"] = false,
+            ["Eggplant Seed"] = false,
             ["Watermelon Seed"] = true,
             ["Cocotank Seed"] = true,
             ["Grape Seed"] = true,
@@ -152,5 +155,4 @@ getgenv().Config = {
         }
     }
 }
-script_key=getgenv().Config["Key"];
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a0ef4b49bca056c6d0ebcf051948d4a8.lua"))()
+script_key=getgenv().Config["Key"]; loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a0ef4b49bca056c6d0ebcf051948d4a8.lua"))()
