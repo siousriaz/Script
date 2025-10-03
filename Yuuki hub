@@ -32,7 +32,7 @@ getgenv().Config = {
             ["Enable"] = true, -- Reduced Bug/Error IDK [ Recommended ]
             ["Delays"] = 1, -- [ Hours ] 0.5 = 30mins
         },
-        ["FPS Boost"] = true,
+        ["FPS Boost"] = false,
         ["UI"] = true,
     },
     ["Auto Play"] = {
