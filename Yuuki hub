@@ -30,9 +30,9 @@ getgenv().Config = {
     ["Performance"] = {
         ["Auto Rejoin"] = {
             ["Enable"] = true, -- Reduced Bug/Error IDK [ Recommended ]
-            ["Delays"] = 1, -- [ Hours ] 0.5 = 30mins
+            ["Delays"] = 2, -- [ Hours ] 0.5 = 30mins
         },
-        ["FPS Boost"] = false,
+        ["FPS Boost"] = true,
         ["UI"] = true,
     },
     ["Auto Play"] = {
